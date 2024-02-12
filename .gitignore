@@ -396,3 +396,14 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+.idea
+bin/
+tmp/
+internal/mocks
+.env
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+dist
+dist-ssr
+*.local

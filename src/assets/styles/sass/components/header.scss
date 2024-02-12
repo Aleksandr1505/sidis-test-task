@@ -1,0 +1,22 @@
+.header {
+  padding: 10px 12px 10px;
+  background-color: #edd661;
+}
+
+.menu-list {
+  display: none;
+
+  @media screen and (min-width: 575px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.burger-menu-button {
+  width: 60px;
+  height: 60px;
+
+  @media screen and (min-width: 575px) {
+    display: none;
+  }
+}
