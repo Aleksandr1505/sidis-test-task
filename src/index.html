@@ -51,46 +51,102 @@
         </button>
       </nav>
     </header>
+    <div class="sidebar">
+      <ul class="sidebar-menu">
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">About</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Team</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Portfolio</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Services</a>
+        </li>
+        <li class="sidebar-menu__item">
+          <a class="sidebar-menu__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
     <main class="main">
-      <div class="sidebar">
-        <ul class="sidebar-menu">
-          <li class="sidebar-menu__item">
-            <a class="sidebar-menu__link" href="#">About</a>
-          </li>
-          <li class="sidebar-menu__item">
-            <a class="sidebar-menu__link" href="#">Team</a>
-          </li>
-          <li class="sidebar-menu__item">
-            <a class="sidebar-menu__link" href="#">Portfolio</a>
-          </li>
-          <li class="sidebar-menu__item">
-            <a class="sidebar-menu__link" href="#">Services</a>
-          </li>
-          <li class="sidebar-menu__item">
-            <a class="sidebar-menu__link" href="#">Contacts</a>
-          </li>
-        </ul>
-      </div>
-      <section class="main-section">
+      <section class="inputs">
+        <h2 class="inputs-title">Reversed Text and Password Generator functionality</h2>
         <div class="container">
-          <h2 class="reverse-text-form-title">Enter text and get its reversed version</h2>
-          <form autocomplete="off" class="reverse-text-form">
-            <input class="reverse-text-form__input" type="text" name="text" />
-            <button class="reverse-text-form__button">Reverse text</button>
-          </form>
-          <div class="reverse-result-container">
+          <h3 class="reverse-text-form-title">Enter text and get its reversed version</h3>
+          <input autocomplete="off" class="reverse-text-input" type="text" name="text" />
+          <button type="button" class="reverse-text-button">Reverse text</button>
+          <div class="reverse-text-result">
+            <span class="reverse-text-result__title">Reversed version:</span>
+            <span class="reversed-text"></span>
           </div>
         </div>
-        <!-- <ul>
-          <li>
-            <div style="width: 100%; height: 400px; background-color: #000"></div>
-          </li>
-        </ul> -->
+        <div class="container">
+          <h3 class="password-generator-title">Pressing button will generate password, which satisfies next rules:</h3>
+          <ol class="password-rules">
+            <li class="password-rules__item">
+              <span class="password-rules__text">Password has 8 symbols;</span>
+            </li>
+            <li class="password-rules__item">
+              <span class="password-rules__text">Password includes big letter;</span>
+            </li>
+            <li class="password-rules__item">
+              <span class="password-rules__text">Password includes small letter;</span>
+            </li>
+            <li class="password-rules__item">
+              <span class="password-rules__text">Password includes number;</span>
+            </li>
+            <li class="password-rules__item">
+              <span class="password-rules__text">Password includes special symbol.</span>
+            </li>
+          </ol>
+          <input readonly autocomplete="off" class="password-generator-input" type="text" name="password" />
+          <button type="button" class="password-generator-button">Generate password</button>
+        </div>
+      </section>
+      <section class="products">
+        <h2 class="products-title">Products</h2>
+        <ul class="products-list"></ul>
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer-helper">
+        <ul class="footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Team</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Portfolio</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Services</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <div class="footer-copyright">
+          <div class="footer-copyright__helper">
+            &copy; <a class="footer-copyright__site-link" href="#">Your Site Name</a
+            ><span class="footer-copyright__text">,All Right Reserved.</span>
+          </div>
+          <div class="footer-copyright__helper">
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <span class="footer-copyright__text">Designed By</span>
+            <a class="footer-copyright__copyright-link" href="https://htmlcodex.com">HTML Codex</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <!-- Footer End -->
-    <!-- custom JavaScript -->
+    <!-- JavaScript -->
     <script src="$$/assets/scripts/main.js"></script>
+    <script src="$$/assets/scripts/reverseText.js"></script>
+    <script src="$$/assets/scripts/passwordGenerator.js"></script>
+    <script src="$$/assets/scripts/getProducts.js"></script>
   </body>
 </html>

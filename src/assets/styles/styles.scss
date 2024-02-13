@@ -1,34 +1,9 @@
-/*********************************************************
-    // abstracts
-**********************************************************/
-
-// @import "sass/abstracts/variables";
-
-/*********************************************************
-    // base
-**********************************************************/
-
-// @import "sass/base/fonts";
-
-/*********************************************************
-    // layout
-**********************************************************/
-
-// @import "sass/layout/header";
-// @import "sass/layout/footer";
-
-/*********************************************************
-    // components
-**********************************************************/
-
-// @import "sass/components/button";
-
-/*********************************************************
-    // pages
-**********************************************************/
+// import all styles
 @import "normalize.scss";
 @import "sass/helpers/extras";
+@import "sass/helpers/variables";
 @import "sass/helpers/base";
+@import "sass/components/footer";
 @import "sass/components/header";
+@import "sass/components/sidebar";
 @import "sass/components/main";
-@import "sass/pages/all";

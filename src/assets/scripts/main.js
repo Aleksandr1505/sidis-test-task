@@ -1,4 +1,4 @@
-const mainSection = document.querySelector('.main-section');
+const main = document.querySelector('.main');
 const burgerMenuBtn = document.querySelector('.burger-menu-button');
 const sidebar = document.querySelector('.sidebar');
 burgerMenuBtn.addEventListener('click', handleOpenCloseSidebar);
@@ -9,17 +9,18 @@ function stopBodyScroll() {
   } else {
     document.body.style.overflow = 'scroll';
   }
-};
+}
 
 function handleOpenCloseSidebar() {
   const isOpenClassAdded = sidebar.classList.contains('is-open');
-  const isSlideClassAdded = mainSection.classList.contains('is-slide');
-  if (isOpenClassAdded && isSlideClassAdded) {
+  const isMainSlided = main.classList.contains('is-slide');
+
+  if (isOpenClassAdded && isMainSlided) {
     sidebar.classList.remove('is-open');
-    mainSection.classList.remove('is-slide');
+    main.classList.remove('is-slide');
   } else {
     sidebar.classList.add('is-open');
-    mainSection.classList.add('is-slide');
+    main.classList.add('is-slide');
   }
   stopBodyScroll();
-};
+}
